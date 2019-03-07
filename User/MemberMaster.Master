@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MemberMaster.master.cs" Inherits="SocietyManagementSystem.User.MemberMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+
+    <script type="text/javascript">
+
+        ddsmoothmenu.init({
+            mainmenuid: "templatemo_menu", //menu DIV id
+            orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+            classname: 'ddsmoothmenu', //class added to menu's outer DIV
+            //customtheme: ["#1c5a80", "#18374a"],
+            contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+        })
+
+</script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #form1
+        {
+            height: 783px;
+        }
+        .style1
+        {
+            width: 118px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+          <div class="cleaner hr_divider">
+    
+    <div id="templatemo_wrapper">
+	<div id="templatemo_header">
+    
+    <div id="site_title" style="font-size: large; color: #000099"><h6><a href="">Society Management</a></h6></div>    
+        
+    </div> <!-- end of header -->
+    <div id="templatemo_menu" class="ddsmoothmenu" style="color: #000099; font-size: large">
+        <ul style="color: #000099; font-size: large">
+            <li><a href="MemberHome.aspx" class="selected">Home</a></li>
+            <li><a href="">Documents</a>
+                <ul>
+                    <li><a href="PersonalShare.aspx">Personal Share Account Details</a></li>
+                    <li><a href="ShareAccountRegister.aspx">Share Account Registration</a></li>
+                    <li><a href="ShareTransfer.aspx">Share Transfer Register</a></li>
+                    <li><a href="ShareCertificate.aspx">Share Certificate</a></li>
+              	</ul>
+            </li>
+            <li><a href="">Notification</a>
+              <ul>
+                <li><a href="Notification.aspx">Add New Notifications</a></li>
+                <li><a href="ViewNotification.aspx">View Notifications</a></li>
+              </ul>
+            </li>
+            
+            
+             <li><a href="MaintenanceInfo.aspx">Maintenance</a></li>
+
+             
+             <li><a href="MemberInformation.aspx">Member</a></li>
+             <li><a href="Default.aspx">
+                 <asp:LoginStatus ID="LoginStatus1" runat="server"  LogoutAction="Redirect" 
+            LogoutPageUrl="~/User/Default.aspx" /></a></li>
+        </ul>
+       
+        <br style="clear: left" />
+    </div> <!-- end of templatemo_menu -->
+    <div id="templatemo_slider">
+   
+        <div id="slider" class="nivoSlider">
+            <img src="../01.jpg" alt="Slider 01" title="" width="940" height="222" />
+            <img src="../02.jpg" alt="Slider 02" title="" width="940" height="222" />
+            <img src="../03.jpg" alt="Slider 03" title="" width="940" height="222"/>
+            <img src="../04.jpg" alt="Slider 04" title="" width="940" height="222" />
+        </div>
+        <div id="htmlcaption" class="nivo-html-caption">
+           
+        </div>
+        <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $('#slider').nivoSlider({
+                    effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+                    slices: 15, // For slice animations
+                    boxCols: 8, // For box animations
+                    boxRows: 4, // For box animations
+                    animSpeed: 500, // Slide transition speed
+                    pauseTime: 3000, // How long each slide will show
+                    startSlide: 0, // Set starting Slide (0 index)
+                    directionNav: true, // Next and Prev navigation
+                    directionNavHide: false, // Only show on hover
+                    controlNav: false, // 1,2,3... navigation
+                    controlNavThumbs: false, // Use thumbnails for Control Nav
+                    controlNavThumbsFromRel: false, // Use image rel for thumbs
+                    controlNavThumbsSearch: '.jpg', // Replace this with...
+                    controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
+                    keyboardNav: true, // Use left and right arrows
+                    pauseOnHover: true, // Stop animation while hovering
+                    manualAdvance: false, // Force manual transitions
+                    captionOpacity: 0.8, // Universal caption opacity
+                    prevText: 'Prev', // Prev directionNav text
+                    nextText: 'Next', // Next directionNav text
+                    beforeChange: function () { }, // Triggers before a slide transition
+                    afterChange: function () { }, // Triggers after a slide transition
+                    slideshowEnd: function () { }, // Triggers after all slides have been shown
+                    lastSlide: function () { }, // Triggers when last slide is shown
+                    afterLoad: function () { } // Triggers when slider has loaded
+                });
+            });
+        </script>   
+    </div>
+      <div id="templatemo_main">
+    <div class="col one_third">
+        	<h2>Welcome <br />
+                <asp:LoginName ID="LoginName1" runat="server" />
+            </h2>
+            <asp:ContentPlaceHolder ID="main" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+           
+        <div class="col one_third last_box">
+        	<h2>Services</h2>
+            <asp:Menu ID="mnuServices" runat="server" Font-Size="Large" ForeColor="#000099">
+                <Items>
+                    <asp:MenuItem Text="Income/Expense" Value="Income/Expense" NavigateUrl="ExpenseIncomeData.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/User/Inquiry.aspx" Text="Inquiry" Value="Inquiry">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/User/MeetingData.aspx" Text="Meeting" 
+                        Value="Meeting"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/User/Complaints.aspx" Text="Complaints" 
+                        Value="Complaints"></asp:MenuItem>
+                    <asp:MenuItem Text="Photographs" Value="Photographs" NavigateUrl="EventPhotograph.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="FlatDetails" Value="Photographs" NavigateUrl="FlatDetails.aspx"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </div>
+       </div>
+       </div>
+         
+    
+    <div id="templatemo_bottom"> 
+     <h5>Follow Us</h5>
+        <asp:HyperLink ID="hlFacebook" runat="server" ImageUrl="~/User/img/facebook.png">Facebook</asp:HyperLink>
+        <asp:HyperLink ID="hlLinkedIn" runat="server" ImageUrl="~/User/img/linkedin.png">Linked In</asp:HyperLink>
+        <asp:HyperLink ID="hlMySpace" runat="server" ImageUrl="~/User/img/myspace.png">MySpace</asp:HyperLink>
+        <asp:HyperLink ID="hlYoutube" runat="server" ImageUrl="~/User/img/youtube.png">Youtube</asp:HyperLink>
+        <asp:HyperLink ID="hlVimeo" runat="server" ImageUrl="~/User/img/vimeo.png">Vimeo</asp:HyperLink>
+   </div>
+    </div>
+         
+    
+    </form>
+</body>
+</html>

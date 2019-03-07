@@ -1,0 +1,4 @@
+c:\users\rio\documents\visual studio 2010\Projects\SocietyManagementSystem\SocietyManagementSystem\bin\SocietyManagementSystem.dll
+c:\users\rio\documents\visual studio 2010\Projects\SocietyManagementSystem\SocietyManagementSystem\bin\SocietyManagementSystem.pdb
+c:\users\rio\documents\visual studio 2010\Projects\SocietyManagementSystem\SocietyManagementSystem\obj\Debug\SocietyManagementSystem.dll
+c:\users\rio\documents\visual studio 2010\Projects\SocietyManagementSystem\SocietyManagementSystem\obj\Debug\SocietyManagementSystem.pdb

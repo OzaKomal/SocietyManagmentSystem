@@ -1,0 +1,269 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdMaster.master.cs" Inherits="SocietyManagementSystem.Admin.AdMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   
+    <link rel="stylesheet" href="../screen.css" type="text/css" media="screen" title="default" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div id="page-top-outer">    
+        <div id="page-top">
+
+        <div id="logo">
+	        <a href="" ><img src="../proj_img.jpg" alt=""/>Society Management</a>
+	    </div>
+	    
+	    <div id="top-search">
+        <Table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+		    <td>
+                <asp:TextBox  ID="txtSearch" Text="Search" runat="server" CssClass="top-search-inp"></asp:TextBox>
+            </td>
+		    <td>
+		        <asp:DropDownList ID="ddlSearch" runat="server" CssClass="styledselect">
+                    <asp:ListItem>Member</asp:ListItem>
+                    <asp:ListItem>Notice</asp:ListItem>
+                    <asp:ListItem>Complaints</asp:ListItem>
+                    <asp:ListItem>Documents</asp:ListItem>
+                </asp:DropDownList>
+		    </td>
+		    <td>
+		        <input type="image" src="img/top_search_btn.gif" />
+		    </td>
+		</tr>
+		</table>
+	    </div>
+        <div class="clear"></div>
+
+        </div>
+        </div>
+ 	    <!-- demo -->
+       <div class="nav-outer-repeat">
+       
+		
+       <div class="account-content">
+			<div class="account-drop-inner">
+				
+			</div>
+			</div>
+		
+		<div class="nav">
+		<div class="table">
+        
+        <ul class="select"><li><a href="Meeting.aspx"><b>Meetings</b></a>
+		</li>
+		</ul>  
+
+        
+		
+		<div class="nav-divider">&nbsp;</div>
+		
+		<ul class="select"><li><a href="ComplainData.aspx"><b>Complaints</b></a>
+		
+		</li>
+		</ul>
+
+        <div class="nav-divider">&nbsp;</div>		
+		<ul class="select"><li><a href="Photograph.aspx"><b>Photographs</b></a>
+		
+		</li>
+		</ul>
+         
+        <div class="nav-divider">&nbsp;</div>		
+		<ul class="select"><li><a href="InquiryData.aspx"><b>Inquiry</b></a>
+		
+		</li>
+		</ul>
+
+        <div class="nav-divider">&nbsp;</div>
+		
+		<ul class="select"><li><a href=""><b>
+            <asp:LoginStatus ID="LoginStatus1" LogoutAction="Redirect" 
+            LogoutPageUrl="~/User/Default.aspx" runat="server" Width="20px" />
+        </b>
+        </a>
+		</li>
+		</ul>
+       
+
+		<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		</div>
+		
+        
+        
+        <div class="clear"></div>
+        </div>
+        
+        <!-- -->
+ 	    
+        
+        <div class="clear">&nbsp;</div>
+        
+        <div class="nav-outer-repeat"> 
+        <div class="nav-outer"> 
+        <div id="nav-right">
+		
+		    
+			<div class="account-content">
+			<div class="account-drop-inner">
+				
+			</div>
+			</div>
+			
+		
+		</div>
+		
+		<div class="nav">
+		<div class="table">
+        
+        <ul class="select"><li><a href="AdminHome.aspx"><b>Home</b></a>
+		</li>
+		</ul>  
+
+        
+		
+		<div class="nav-divider">&nbsp;</div>
+		
+		<ul class="select"><li><a href="Member.aspx"><b>Member</b></a>
+		
+		</li>
+		</ul>
+		
+		<div class="nav-divider">&nbsp;</div>
+
+        
+
+       <ul class="select"><li><a href=""><b>Document</b></a>
+		
+		<div class="select_sub">
+			<ul class="sub">
+				<li><a href="ShareAccountRegisterDetails.aspx">Share Account Register</a></li>
+				<li><a href="PersonalShareAccountDetails.aspx">Personal Share Account</a></li>
+				<li><a href="ShareTransferRegister.aspx">Share Transfer Register</a></li>
+                <li><a href="ShareCertificateDocument.aspx">Share Certificate</a></li>
+			</ul>
+		</div>
+		
+		</li>
+		</ul>
+
+        <div class="nav-divider">&nbsp;</div>		
+		<ul class="select"><li><a href="FlatBlock.aspx"><b>Flat</b></a>
+		
+		</li>
+		</ul>
+		
+        <div class="nav-divider">&nbsp;</div>		
+		<ul class="select">
+        <li>
+        <a href=""><b>Money Management</b></a>
+            <div class="select_sub">
+            <ul class="sub">
+				<li><a href="Maintenance.aspx">Maintenance</a></li>
+				<li><a href="ExpenseIncome.aspx">Income/Expense</a></li>
+			    <li><a href="MaintenanceData.aspx">Maintenance Data</a></li>
+			</ul></div>
+		</li>
+		</ul>
+		
+		<div class="nav-divider">&nbsp;</div>
+		                    
+		<ul class="select">
+        <li>
+        <a href=""><b>Notification</b></a>
+		<div class="select_sub">
+			<ul class="sub">
+				<li><a href="Notice.aspx">Notice</a></li>
+				<li><a href="Advertisements.aspx">Advertisement</a></li>
+				<li><a href="Invitation.aspx">Invitation</a></li>
+			</ul>
+		</div>
+		</li>
+		</ul>
+
+        
+   
+		<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		</div>
+		
+        
+        </div>
+        <div class="clear"></div>
+        </div>
+       
+        <div class="clear"></div>
+        
+        <div id="content-outer">
+
+        <div id="content">
+
+	
+	    <div id="page-heading">
+		    <h1>Welcome
+                <asp:LoginName ID="LoginName1" runat="server"/>
+            </h1>
+	    </div>
+	
+
+	    <table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
+	    <tr>
+		    <th rowspan="3" class="sized"><img src="img/side_shadowleft.jpg" width="20" height="300" alt="" /></th>
+		    <th class="topleft"></th>
+		    <td id="tbl-border-top">&nbsp;</td>
+		    <th class="topright"></th>
+		    <th rowspan="3" class="sized"><img src="img/side_shadowright.jpg" width="20"  height="300" alt="" /></th>
+    	</tr>
+	    <tr>
+		    <td id="tbl-border-left"></td>
+		    <td>
+		        <div id="content-table-inner">
+			    <div id="table-content">
+			
+                <asp:ContentPlaceHolder ID="main" runat="server">
+                </asp:ContentPlaceHolder>
+			
+			    </div>
+
+			    <div class="clear"></div>
+		 
+        		</div>
+	
+		    </td>
+		    <td id="tbl-border-right"></td>
+	    </tr>
+	    <tr>
+		    <th class="sized bottomleft"></th>
+		    <td id="tbl-border-bottom">&nbsp;</td>
+		    <th class="sized bottomright"></th>
+	    </tr>
+	    </table>
+	    <div class="clear">&nbsp;</div>
+
+        </div>
+
+        <div class="clear">&nbsp;</div>
+        </div>
+
+      
+        <div id="footer">
+    	<div id="footer-left">
+	        Admin &copy; Society Management System Ltd.  All rights reserved.</div>
+	
+	    <div class="clear">&nbsp;</div>
+        </div>
+
+
+    </form>
+</body>
+</html>

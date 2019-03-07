@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94D75834-AD17-4800-9268-B1C5F79904E7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SocietyManagementSystem</RootNamespace>
+    <AssemblyName>SocietyManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="01.jpg" />
+    <Content Include="02.jpg" />
+    <Content Include="03.jpg" />
+    <Content Include="04.jpg" />
+    <Content Include="Admin\AdminHome.aspx" />
+    <Content Include="Admin\Advertisements.aspx" />
+    <Content Include="Admin\ComplainData.aspx" />
+    <Content Include="Admin\ExpenseIncome.aspx" />
+    <Content Include="Admin\FlatBlock.aspx" />
+    <Content Include="Admin\img\account_drop_bg.gif" />
+    <Content Include="Admin\img\account_line.gif" />
+    <Content Include="Admin\img\actions_slider_bg.gif" />
+    <Content Include="Admin\img\action_delete.gif" />
+    <Content Include="Admin\img\action_edit.gif" />
+    <Content Include="Admin\img\back_0.gif" />
+    <Content Include="Admin\img\back_1x.gif" />
+    <Content Include="Admin\img\bg_related_act.gif" />
+    <Content Include="Admin\img\blank.gif" />
+    <Content Include="Admin\img\border_bit.jpg" />
+    <Content Include="Admin\img\bubble_inner.gif" />
+    <Content Include="Admin\img\bubble_left.gif" />
+    <Content Include="Admin\img\bubble_right.gif" />
+    <Content Include="Admin\img\cal_th_repeat.jpg" />
+    <Content Include="Admin\img\cal_top_bg.jpg" />
+    <Content Include="Admin\img\cal_top_repeat.jpg" />
+    <Content Include="Admin\img\checkbox.gif" />
+    <Content Include="Admin\img\choose-file.gif" />
+    <Content Include="Admin\img\content_repeat.jpg" />
+    <Content Include="Admin\img\content_round_repeat.jpg" />
+    <Content Include="Admin\img\content_round_top.jpg" />
+    <Content Include="Admin\img\Copy of pro_line_1.gif" />
+    <Content Include="Admin\img\corner_bottom_left.jpg" />
+    <Content Include="Admin\img\corner_bottom_right.jpg" />
+    <Content Include="Admin\img\corner_top_left.jpg" />
+    <Content Include="Admin\img\corner_top_right.jpg" />
+    <Content Include="Admin\img\divider.jpg" />
+    <Content Include="Admin\img\dropdown_actions.gif" />
+    <Content Include="Admin\img\error_left.gif" />
+    <Content Include="Admin\img\error_right.gif" />
+    <Content Include="Admin\img\form_inp.gif" />
+    <Content Include="Admin\img\form_inp_error.gif" />
+    <Content Include="Admin\img\form_reset.gif" />
+    <Content Include="Admin\img\form_select.gif" />
+    <Content Include="Admin\img\form_select_small.gif" />
+    <Content Include="Admin\img\form_submit.gif" />
+    <Content Include="Admin\img\form_textarea.gif" />
+    <Content Include="Admin\img\header_related_act.gif" />
+    <Content Include="Admin\img\icon_acc_inbox.gif" />
+    <Content Include="Admin\img\icon_acc_personal.gif" />
+    <Content Include="Admin\img\icon_acc_projects.gif" />
+    <Content Include="Admin\img\icon_acc_settings.gif" />
+    <Content Include="Admin\img\icon_acc_stats.gif" />
+    <Content Include="Admin\img\icon_back_login.gif" />
+    <Content Include="Admin\img\icon_calendar.jpg" />
+    <Content Include="Admin\img\icon_close_blue.gif" />
+    <Content Include="Admin\img\icon_close_green.gif" />
+    <Content Include="Admin\img\icon_close_red.gif" />
+    <Content Include="Admin\img\icon_close_yellow.gif" />
+    <Content Include="Admin\img\icon_edit.gif" />
+    <Content Include="Admin\img\icon_idlogo.jpg" />
+    <Content Include="Admin\img\icon_list_arrow.gif" />
+    <Content Include="Admin\img\icon_minus.gif" />
+    <Content Include="Admin\img\icon_plus.gif" />
+    <Content Include="Admin\img\inp_login.gif" />
+    <Content Include="Admin\img\lines_dotted_short.gif" />
+    <Content Include="Admin\img\loginbox_bg.png" />
+    <Content Include="Admin\img\login_bg.jpg" />
+    <Content Include="Admin\img\logo.png" />
+    <Content Include="Admin\img\message_blue.gif" />
+    <Content Include="Admin\img\message_green.gif" />
+    <Content Include="Admin\img\message_red.gif" />
+    <Content Include="Admin\img\message_yellow.gif" />
+    <Content Include="Admin\img\nav_logout.gif" />
+    <Content Include="Admin\img\nav_myaccount.gif" />
+    <Content Include="Admin\img\paging_far_left.gif" />
+    <Content Include="Admin\img\paging_far_right.gif" />
+    <Content Include="Admin\img\paging_left.gif" />
+    <Content Include="Admin\img\paging_right.gif" />
+    <Content Include="Admin\img\pro_line_0x.gif" />
+    <Content Include="Admin\img\pro_line_1.gif" />
+    <Content Include="Admin\img\pro_line_2.gif" />
+    <Content Include="Admin\img\repeat.jpg" />
+    <Content Include="Admin\img\select_number_rows.gif" />
+    <Content Include="Admin\img\side_shadowleft.jpg" />
+    <Content Include="Admin\img\side_shadowright.jpg" />
+    <Content Include="Admin\img\step_1.gif" />
+    <Content Include="Admin\img\step_dark_left.gif" />
+    <Content Include="Admin\img\step_dark_right.gif" />
+    <Content Include="Admin\img\step_dark_round.gif" />
+    <Content Include="Admin\img\step_light_left.gif" />
+    <Content Include="Admin\img\step_light_right.gif" />
+    <Content Include="Admin\img\step_light_round.gif" />
+    <Content Include="Admin\img\submit_login.gif" />
+    <Content Include="Admin\img\table_header.jpg" />
+    <Content Include="Admin\img\table_header_checkbox.jpg" />
+    <Content Include="Admin\img\table_header_options.jpg" />
+    <Content Include="Admin\img\table_header_repeat.jpg" />
+    <Content Include="Admin\img\table_icon_1.gif" />
+    <Content Include="Admin\img\table_icon_2.gif" />
+    <Content Include="Admin\img\table_icon_3.gif" />
+    <Content Include="Admin\img\table_icon_4.gif" />
+    <Content Include="Admin\img\table_icon_5.gif" />
+    <Content Include="Admin\img\table_sort_arrow.gif" />
+    <Content Include="Admin\img\top_bg.jpg" />
+    <Content Include="Admin\img\top_search_btn.gif" />
+    <Content Include="Admin\img\top_search_inp.gif" />
+    <Content Include="Admin\img\top_search_select.gif" />
+    <Content Include="Admin\img\upload_file.gif" />
+    <Content Include="Admin\img\year_next.gif" />
+    <Content Include="Admin\img\year_prev.gif" />
+    <Content Include="Admin\InquiryData.aspx" />
+    <Content Include="Admin\Invitation.aspx" />
+    <Content Include="Admin\Maintenance.aspx" />
+    <Content Include="Admin\MaintenanceData.aspx" />
+    <Content Include="Admin\Meeting.aspx" />
+    <Content Include="Admin\Member.aspx" />
+    <Content Include="Admin\Notice.aspx" />
+    <Content Include="Admin\PersonalShareAccountDetails.aspx" />
+    <Content Include="Admin\Photograph.aspx" />
+    <Content Include="Admin\ShareAccountRegisterDetails.aspx" />
+    <Content Include="Admin\ShareCertificateDocument.aspx" />
+    <Content Include="Admin\ShareTransferRegister.aspx" />
+    <Content Include="App_Data\Society_data.mdf" />
+    <Content Include="App_Data\Society_data_log.ldf">
+      <DependentUpon>Society_data.mdf</DependentUpon>
+    </Content>
+    <Content Include="images\account_drop_bg.gif" />
+    <Content Include="images\account_line.gif" />
+    <Content Include="images\actions_slider_bg.gif" />
+    <Content Include="images\action_delete.gif" />
+    <Content Include="images\action_edit.gif" />
+    <Content Include="images\back_0.gif" />
+    <Content Include="images\back_1x.gif" />
+    <Content Include="images\bg_related_act.gif" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\border_bit.jpg" />
+    <Content Include="images\bubble_inner.gif" />
+    <Content Include="images\bubble_left.gif" />
+    <Content Include="images\bubble_right.gif" />
+    <Content Include="images\cal_th_repeat.jpg" />
+    <Content Include="images\cal_top_bg.jpg" />
+    <Content Include="images\cal_top_repeat.jpg" />
+    <Content Include="images\checkbox.gif" />
+    <Content Include="images\choose-file.gif" />
+    <Content Include="images\content_repeat.jpg" />
+    <Content Include="images\content_round_repeat.jpg" />
+    <Content Include="images\content_round_top.jpg" />
+    <Content Include="images\Copy of pro_line_1.gif" />
+    <Content Include="images\corner_bottom_left.jpg" />
+    <Content Include="images\corner_bottom_right.jpg" />
+    <Content Include="images\corner_top_left.jpg" />
+    <Content Include="images\corner_top_right.jpg" />
+    <Content Include="images\divider.jpg" />
+    <Content Include="images\dropdown_actions.gif" />
+    <Content Include="images\error_left.gif" />
+    <Content Include="images\error_right.gif" />
+    <Content Include="images\form_inp.gif" />
+    <Content Include="images\form_inp_error.gif" />
+    <Content Include="images\form_reset.gif" />
+    <Content Include="images\form_select.gif" />
+    <Content Include="images\form_select_small.gif" />
+    <Content Include="images\form_submit.gif" />
+    <Content Include="images\form_textarea.gif" />
+    <Content Include="images\header_related_act.gif" />
+    <Content Include="images\icon_acc_inbox.gif" />
+    <Content Include="images\icon_acc_personal.gif" />
+    <Content Include="images\icon_acc_projects.gif" />
+    <Content Include="images\icon_acc_settings.gif" />
+    <Content Include="images\icon_acc_stats.gif" />
+    <Content Include="images\icon_back_login.gif" />
+    <Content Include="images\icon_calendar.jpg" />
+    <Content Include="images\icon_close_blue.gif" />
+    <Content Include="images\icon_close_green.gif" />
+    <Content Include="images\icon_close_red.gif" />
+    <Content Include="images\icon_close_yellow.gif" />
+    <Content Include="images\icon_edit.gif" />
+    <Content Include="images\icon_idlogo.jpg" />
+    <Content Include="images\icon_list_arrow.gif" />
+    <Content Include="images\icon_minus.gif" />
+    <Content Include="images\icon_plus.gif" />
+    <Content Include="images\inp_login.gif" />
+    <Content Include="images\lines_dotted_short.gif" />
+    <Content Include="images\loginbox_bg.png" />
+    <Content Include="images\login_bg.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\message_blue.gif" />
+    <Content Include="images\message_green.gif" />
+    <Content Include="images\message_red.gif" />
+    <Content Include="images\message_yellow.gif" />
+    <Content Include="images\nav_logout.gif" />
+    <Content Include="images\nav_myaccount.gif" />
+    <Content Include="images\paging_far_left.gif" />
+    <Content Include="images\paging_far_right.gif" />
+    <Content Include="images\paging_left.gif" />
+    <Content Include="images\paging_right.gif" />
+    <Content Include="images\pro_line_0x.gif" />
+    <Content Include="images\pro_line_1.gif" />
+    <Content Include="images\pro_line_2.gif" />
+    <Content Include="images\repeat.jpg" />
+    <Content Include="images\select_number_rows.gif" />
+    <Content Include="images\side_shadowleft.jpg" />
+    <Content Include="images\side_shadowright.jpg" />
+    <Content Include="images\step_1.gif" />
+    <Content Include="images\step_dark_left.gif" />
+    <Content Include="images\step_dark_right.gif" />
+    <Content Include="images\step_dark_round.gif" />
+    <Content Include="images\step_light_left.gif" />
+    <Content Include="images\step_light_right.gif" />
+    <Content Include="images\step_light_round.gif" />
+    <Content Include="images\submit_login.gif" />
+    <Content Include="images\table_header.jpg" />
+    <Content Include="images\table_header_checkbox.jpg" />
+    <Content Include="images\table_header_options.jpg" />
+    <Content Include="images\table_header_repeat.jpg" />
+    <Content Include="images\table_icon_1.gif" />
+    <Content Include="images\table_icon_2.gif" />
+    <Content Include="images\table_icon_3.gif" />
+    <Content Include="images\table_icon_4.gif" />
+    <Content Include="images\table_icon_5.gif" />
+    <Content Include="images\table_sort_arrow.gif" />
+    <Content Include="images\top_bg.jpg" />
+    <Content Include="images\top_search_btn.gif" />
+    <Content Include="images\top_search_inp.gif" />
+    <Content Include="images\top_search_select.gif" />
+    <Content Include="images\upload_file.gif" />
+    <Content Include="images\year_next.gif" />
+    <Content Include="images\year_prev.gif" />
+    <Content Include="LoginDetails\LoginPage.aspx" />
+    <Content Include="proj_img.jpg" />
+    <Content Include="screen.css" />
+    <Content Include="User\About.aspx" />
+    <Content Include="User\Complaints.aspx" />
+    <Content Include="User\ContactUs.aspx" />
+    <Content Include="User\css\bootstrap-responsive.css" />
+    <Content Include="User\css\bootstrap.css" />
+    <Content Include="User\css\ddsmoothmenu.css" />
+    <Content Include="User\css\nivo-slider.css" />
+    <Content Include="User\css\templatemo_style.css" />
+    <Content Include="User\Default.aspx" />
+    <Content Include="User\DocumentData.aspx" />
+    <Content Include="User\EventPhotograph.aspx" />
+    <Content Include="User\ExpenseIncomeData.aspx" />
+    <Content Include="User\FlatDetails.aspx" />
+    <Content Include="User\GuestInquiry.aspx" />
+    <Content Include="User\img\arrows.png" />
+    <Content Include="User\img\avator.png" />
+    <Content Include="User\img\closelabel.gif" />
+    <Content Include="User\img\date.png" />
+    <Content Include="User\img\facebook.png" />
+    <Content Include="User\img\images %281%29.jpg" />
+    <Content Include="User\img\images.jpg" />
+    <Content Include="User\img\linkedin.png" />
+    <Content Include="User\img\loading.gif" />
+    <Content Include="User\img\myspace.png" />
+    <Content Include="User\img\nextlabel.gif" />
+    <Content Include="User\img\prevlabel.gif" />
+    <Content Include="User\img\templatemo_body.jpg" />
+    <Content Include="User\img\templatemo_hr_divider.jpg" />
+    <Content Include="User\img\templatemo_image_01.jpg" />
+    <Content Include="User\img\templatemo_image_02.jpg" />
+    <Content Include="User\img\templatemo_image_03.jpg" />
+    <Content Include="User\img\templatemo_image_04.jpg" />
+    <Content Include="User\img\templatemo_image_05.jpg" />
+    <Content Include="User\img\templatemo_image_06.jpg" />
+    <Content Include="User\img\templatemo_image_07.jpg" />
+    <Content Include="User\img\templatemo_image_08.jpg" />
+    <Content Include="User\img\templatemo_list.png" />
+    <Content Include="User\img\templatemo_logo.png" />
+    <Content Include="User\img\templatemo_main.jpg" />
+    <Content Include="User\img\templatemo_menu_hover.png" />
+    <Content Include="User\img\templatemo_search.png" />
+    <Content Include="User\img\templatemo_vt-divider.jpg" />
+    <Content Include="User\img\vimeo.png" />
+    <Content Include="User\img\youtube.png" />
+    <Content Include="User\Inquiry.aspx" />
+    <Content Include="User\js\ddsmoothmenu.js" />
+    <Content Include="User\js\jquery-1.4.3.min.js" />
+    <Content Include="User\js\jquery.js" />
+    <Content Include="User\js\jquery.lightbox-0.5.js" />
+    <Content Include="User\js\jquery.min.js" />
+    <Content Include="User\js\jquery.nivo.slider.pack.js" />
+    <Content Include="User\js\piroBox.1_2.js" />
+    <Content Include="User\MaintenanceInfo.aspx" />
+    <Content Include="User\MeetingData.aspx" />
+    <Content Include="User\MemberHome.aspx" />
+    <Content Include="User\MemberInformation.aspx" />
+    <Content Include="User\Notification.aspx" />
+    <Content Include="User\PersonalShare.aspx" />
+    <Content Include="User\ShareAccountRegister.aspx" />
+    <Content Include="User\ShareCertificate.aspx" />
+    <Content Include="User\ShareTransfer.aspx" />
+    <Content Include="User\ViewNotification.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdMaster.Master.cs">
+      <DependentUpon>AdMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdMaster.Master.designer.cs">
+      <DependentUpon>AdMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Advertisements.aspx.cs">
+      <DependentUpon>Advertisements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Advertisements.aspx.designer.cs">
+      <DependentUpon>Advertisements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ComplainData.aspx.cs">
+      <DependentUpon>ComplainData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ComplainData.aspx.designer.cs">
+      <DependentUpon>ComplainData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ExpenseIncome.aspx.cs">
+      <DependentUpon>ExpenseIncome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ExpenseIncome.aspx.designer.cs">
+      <DependentUpon>ExpenseIncome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FlatBlock.aspx.cs">
+      <DependentUpon>FlatBlock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FlatBlock.aspx.designer.cs">
+      <DependentUpon>FlatBlock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InquiryData.aspx.cs">
+      <DependentUpon>InquiryData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InquiryData.aspx.designer.cs">
+      <DependentUpon>InquiryData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Invitation.aspx.cs">
+      <DependentUpon>Invitation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Invitation.aspx.designer.cs">
+      <DependentUpon>Invitation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Maintenance.aspx.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Maintenance.aspx.designer.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MaintenanceData.aspx.cs">
+      <DependentUpon>MaintenanceData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MaintenanceData.aspx.designer.cs">
+      <DependentUpon>MaintenanceData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Meeting.aspx.cs">
+      <DependentUpon>Meeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Meeting.aspx.designer.cs">
+      <DependentUpon>Meeting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PersonalShareAccountDetails.aspx.cs">
+      <DependentUpon>PersonalShareAccountDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PersonalShareAccountDetails.aspx.designer.cs">
+      <DependentUpon>PersonalShareAccountDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Photograph.aspx.cs">
+      <DependentUpon>Photograph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Photograph.aspx.designer.cs">
+      <DependentUpon>Photograph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ShareAccountRegisterDetails.aspx.cs">
+      <DependentUpon>ShareAccountRegisterDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ShareAccountRegisterDetails.aspx.designer.cs">
+      <DependentUpon>ShareAccountRegisterDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ShareCertificateDocument.aspx.cs">
+      <DependentUpon>ShareCertificateDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ShareCertificateDocument.aspx.designer.cs">
+      <DependentUpon>ShareCertificateDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ShareTransferRegister.aspx.cs">
+      <DependentUpon>ShareTransferRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ShareTransferRegister.aspx.designer.cs">
+      <DependentUpon>ShareTransferRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDetails\LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginDetails\LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Complaints.aspx.cs">
+      <DependentUpon>Complaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Complaints.aspx.designer.cs">
+      <DependentUpon>Complaints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\DocumentData.aspx.cs">
+      <DependentUpon>DocumentData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\DocumentData.aspx.designer.cs">
+      <DependentUpon>DocumentData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EventPhotograph.aspx.cs">
+      <DependentUpon>EventPhotograph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EventPhotograph.aspx.designer.cs">
+      <DependentUpon>EventPhotograph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ExpenseIncomeData.aspx.cs">
+      <DependentUpon>ExpenseIncomeData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ExpenseIncomeData.aspx.designer.cs">
+      <DependentUpon>ExpenseIncomeData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\FlatDetails.aspx.cs">
+      <DependentUpon>FlatDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\FlatDetails.aspx.designer.cs">
+      <DependentUpon>FlatDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\GuestInquiry.aspx.cs">
+      <DependentUpon>GuestInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\GuestInquiry.aspx.designer.cs">
+      <DependentUpon>GuestInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\GuestMaster.Master.cs">
+      <DependentUpon>GuestMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\GuestMaster.Master.designer.cs">
+      <DependentUpon>GuestMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\Inquiry.aspx.cs">
+      <DependentUpon>Inquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Inquiry.aspx.designer.cs">
+      <DependentUpon>Inquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\MaintenanceInfo.aspx.cs">
+      <DependentUpon>MaintenanceInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MaintenanceInfo.aspx.designer.cs">
+      <DependentUpon>MaintenanceInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\MeetingData.aspx.cs">
+      <DependentUpon>MeetingData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MeetingData.aspx.designer.cs">
+      <DependentUpon>MeetingData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\MemberHome.aspx.cs">
+      <DependentUpon>MemberHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MemberHome.aspx.designer.cs">
+      <DependentUpon>MemberHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\MemberInformation.aspx.cs">
+      <DependentUpon>MemberInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MemberInformation.aspx.designer.cs">
+      <DependentUpon>MemberInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\MemberMaster.Master.cs">
+      <DependentUpon>MemberMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MemberMaster.Master.designer.cs">
+      <DependentUpon>MemberMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\Notification.aspx.cs">
+      <DependentUpon>Notification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Notification.aspx.designer.cs">
+      <DependentUpon>Notification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\PersonalShare.aspx.cs">
+      <DependentUpon>PersonalShare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\PersonalShare.aspx.designer.cs">
+      <DependentUpon>PersonalShare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ShareAccountRegister.aspx.cs">
+      <DependentUpon>ShareAccountRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ShareAccountRegister.aspx.designer.cs">
+      <DependentUpon>ShareAccountRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ShareCertificate.aspx.cs">
+      <DependentUpon>ShareCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ShareCertificate.aspx.designer.cs">
+      <DependentUpon>ShareCertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ShareTransfer.aspx.cs">
+      <DependentUpon>ShareTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ShareTransfer.aspx.designer.cs">
+      <DependentUpon>ShareTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ViewNotification.aspx.cs">
+      <DependentUpon>ViewNotification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ViewNotification.aspx.designer.cs">
+      <DependentUpon>ViewNotification.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="User\MemberMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="User\GuestMaster.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1614</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
